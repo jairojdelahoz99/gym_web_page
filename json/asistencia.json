@@ -1,0 +1,16 @@
+[
+    {
+        "id": 1,
+        "usuario": "usuario1",
+        "clase": "Yoga",
+        "fecha": "2025-02-15",
+        "asistencia": "presente"
+    },
+    {
+        "id": 2,
+        "usuario": "usuario1",
+        "clase": "Crossfit",
+        "fecha": "2025-02-16",
+        "asistencia": "ausente"
+    }
+]

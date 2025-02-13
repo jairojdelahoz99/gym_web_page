@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Administración</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+    <h1>Panel de Administración</h1>
+    <p>Bienvenido, <span id="adminNombre"></span></p>
+    <nav>
+        <ul>
+            <li><a href="clases.html">Gestionar Clases</a></li>
+            <li><a href="usuarios.html">Gestionar Usuarios</a></li>
+        </ul>
+    </nav>
+    <h2>Lista de Usuarios</h2>
+    <table>
+            <tr>
+                <th>Usuario</th>
+                <th>Rol</th>
+            </tr>
+        <div id="tablaUsuarios"></div>
+    </table>
+    <script src="../js/dashboard.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+body {
+  background-color: powderblue; /*Color de fondo*/
+  color: blue; /*Color de letra*/
+  font-family: Arial; /*tipo de letra*/
+
+  margin: 0; /*para que los contenedores ocupen toda la pagina header y pie*/
+}
+header {
+  text-align: center; /* centrado*/
+  border: 2px blue solid; /*propiedades del border*/
+  background-color: blue;
+  color: white;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+.imagen {
+  text-align: center; /*centrado */
+}
+
+.parrafo {
+  font-size: 18px; /* tamaño de letra*/
+}
+.mitabla {
+  margin: 0 auto; /*centrar la tabla*/
+}
+.caja {
+  display: flex; /*aplica flexbox para ubicar*/
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+.container {
+  display: flex; /*aplica flexbox para ubicar*/
+
+  flex-wrap: wrap /*en una misma línea o pueden fluir en varias líneas*/;
+  justify-content: center; /*centra un contenido*/
+}
+
+.pie {
+  text-align: center; /* centrado */
+  border: 2px blue solid; /*bordes y propiedades */
+  background-color: blue;
+  color: white;
+}
+
+.parrafo {
+  /*parrafo que se encuentra en la izquierda*/
+  padding-right: 4%;
+}
+
+form {
+  /*formulario */
+  border: 2px blue solid;
+  padding-left: 10%;
+  padding-right: 10%;
+  border-radius: 25px;
+  padding-bottom: 3%;
+  background-color: wheat;
+}

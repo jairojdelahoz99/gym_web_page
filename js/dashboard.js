@@ -1,4 +1,4 @@
-() => {
+(() => {
   document.addEventListener("DOMContentLoaded", () => {
     const usuarioGuardado = localStorage.getItem("usuario");
 
@@ -20,26 +20,19 @@
 
     // 🔹 Personalizar menú según el rol
     const nav = document.querySelector("nav ul");
+    nav.innerHTML = `<li><a href="contacto.html">Contacto</a></li>
+                     <li><a href="clases.html">Clases</a></li>`;
 
-    // Limpiar el menú para evitar duplicados
-    nav.innerHTML = "";
-
-    // Opción visible para todos
-    nav.innerHTML += `<li><a href="contacto.html">Contacto</a></li>`;
-
-    if (usuario.rol === "administrador") {
-      nav.innerHTML += `<li><a href="clases.html">Clases</a></li>`;
-    }
-
+    // 📌 Cargar usuarios
     fetch("../json/usuarios.json")
       .then((response) => response.json())
-      .then((usuarios) => {
-        const tabla = document.getElementById("tablaUsuarios");
-        usuarios.forEach((usuario) => {
-          const fila = document.createElement("tr");
-          fila.innerHTML = `<td>${usuario.usuario}</td><td>${usuario.rol}</td>`;
-          tabla.appendChild(fila);
+      .then((data) => {
+        let filas = "";
+        data.forEach((user) => {
+          filas += `<tr><td>${user.usuario}</td><td>${user.rol}</td></tr>`;
         });
-      });
-  })();
-};
+        document.getElementById("tablaUsuarios").innerHTML = filas;
+      })
+      .catch((error) => console.error("Error al cargar usuarios:", error));
+  });
+})();

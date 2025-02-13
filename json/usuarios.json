@@ -1,17 +1,32 @@
 [
     {
-        "usuario": "admin",
-        "password": "admin123",
+        "usuario": "Jairo Perez",
+        "password": "jairo123",
+        "edad": "24",
         "rol": "administrador"
     },
     {
-        "usuario": "instructor1",
-        "password": "instructor123",
+        "usuario": "Rafael Perez",
+        "password": "rafael123",
+        "edad": "22",
+        "rol": "administrador"
+    },
+    {
+        "usuario": "John Doe",
+        "password": "john123",
+        "edad": "31",
         "rol": "instructor"
     },
     {
-        "usuario": "usuario1",
-        "password": "usuario123",
+        "usuario": "Ana Maria",
+        "password": "ana123",
+        "edad": "18",
+        "rol": "usuario"
+    },
+    {
+        "usuario": "Gabriel Guzman",
+        "password": "gabriel123",
+        "edad": "27",
         "rol": "usuario"
     }
 ]

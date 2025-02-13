@@ -1,55 +1,54 @@
 body {
-  background-color: powderblue; /*Color de fondo*/
-  color: blue; /*Color de letra*/
-  font-family: Arial; /*tipo de letra*/
-
-  margin: 0; /*para que los contenedores ocupen toda la pagina header y pie*/
+  background-color: powderblue;
+  color: blue;
+  font-family: Arial;
+  margin: 0;
 }
+
 header {
-  text-align: center; /* centrado*/
-  border: 2px blue solid; /*propiedades del border*/
+  text-align: center;
+  border: 2px blue solid;
   background-color: blue;
   color: white;
   padding-top: 1%;
   padding-bottom: 1%;
 }
+
 .imagen {
-  text-align: center; /*centrado */
+  text-align: center;
 }
 
 .parrafo {
-  font-size: 18px; /* tamaño de letra*/
+  font-size: 18px;
 }
 .mitabla {
-  margin: 0 auto; /*centrar la tabla*/
+  margin: 0 auto;
 }
 .caja {
-  display: flex; /*aplica flexbox para ubicar*/
+  display: flex;
   padding-left: 3%;
   padding-right: 3%;
 }
 
 .container {
-  display: flex; /*aplica flexbox para ubicar*/
+  display: flex;
 
-  flex-wrap: wrap /*en una misma línea o pueden fluir en varias líneas*/;
-  justify-content: center; /*centra un contenido*/
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .pie {
-  text-align: center; /* centrado */
-  border: 2px blue solid; /*bordes y propiedades */
+  text-align: center;
+  border: 2px blue solid;
   background-color: blue;
   color: white;
 }
 
 .parrafo {
-  /*parrafo que se encuentra en la izquierda*/
   padding-right: 4%;
 }
 
 form {
-  /*formulario */
   border: 2px blue solid;
   padding-left: 10%;
   padding-right: 10%;
